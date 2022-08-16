@@ -26,15 +26,15 @@
                 <img src="{% static 'img/twitter-brands.svg' %}" width="30" height="30" class="d-inline-block align-top"
                     alt="">
                 <!-- Twitter logo -->
-                Twttr Clone
+                Twitter Clone
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="hi mr-auto">
 
                 </ul>
                 <!-- Nav Bar -->
-                <a href="#" class="btn text-white my-2 my-sm-0" type="submit">Inicio</a>
-                <a href="#" class="btn text-white my-2 my-sm-0" type="submit">Logout</a>
+                <a href="{% url 'home' %}" class="btn text-white my-2 my-sm-0" type="submit">Inicio</a>
+                <a href="{% url 'logout' %}" class="btn text-white my-2 my-sm-0" type="submit">Logout</a>
                 <!-- Nav Bar -->
             </div>
         </nav>
