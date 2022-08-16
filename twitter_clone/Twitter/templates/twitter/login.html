@@ -21,6 +21,9 @@
                 <label for="password-id">Password</label>
                 {{ form.password }}
             </div>
+            {% if form.errors %}
+            <p>Username or password not correct.</p>
+            {% endif %}
 
             <button class="twitter-btn">Log in</button>
         </form>
