@@ -10,5 +10,6 @@ urlpatterns = [
     path('login/', LoginView.as_view(template_name = 'twitter/login.html'), name = 'login'),
     path('logout/', LogoutView.as_view(), name = 'logout'),
     path('delete/<int:post_id>/', views.delete, name = 'delete'),
+    path('profile/<str:username>/', views.profile, name = 'profile'),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
