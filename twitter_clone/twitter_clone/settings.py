@@ -125,9 +125,16 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+#Debo definirlo cuando utilizo las vistas build-in LogIn y LogOut
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
 
 
+#Es necesario cuando quiero añadir static files a mi proyecto (imagenes)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+#Si utilizo el decorador 'login_required' debo especificar a donde redirige aquellos que no estan loggeados
+LOGIN_URL = 'login'
